@@ -1,0 +1,282 @@
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 100;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 700;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 900;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff")
+}
+
+.netflix-sans-font-loaded {
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+    font-family: NKufi,Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+    font-family: GraphikTH,Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    border: 0;
+    text-decoration: none;
+}
+body {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/c66c94fd-7bcd-4be0-ac29-0f44d08b80b0/BR-pt-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    position: relative;
+}
+body::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#00000097,#00000070);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+}
+header h1 {
+    display: block;
+    z-index: 1;
+}
+form {
+    width: 450px;
+    padding: 60px 68px 40px;
+    margin: 0 auto;
+    background-color: #000000bf;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+h1 {
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 50px;
+    background-size: 300% 300%;
+    z-index: 1;
+    animation-duration: 2s;
+    animation: anime 3s infinite alternate ease-in-out;
+    background-image: linear-gradient(to left, #B1060F,#e50914,#A63737, #F2B90F, #F23D3D, #3E22F2,#e50914);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+.logo{
+    position: relative;
+    z-index: 1;
+}
+@keyframes anime {
+    form {
+        background-position: 0 50%;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+form h3 {
+    font-size: 31px;
+    color: white;
+    margin-bottom: 28px;
+    font-weight: 500;
+    animation: bounce;
+    animation-delay: 2s;
+    animation-duration: 0.9s;
+}
+
+.imput-email{
+    position: relative;
+    margin-bottom: 16px;
+}
+.imput-email input {
+    /* width: 100%;
+    height: 50px;
+    background-color: #333333;
+    margin-bottom: 16px; */
+    /* border: 1px solid green; */
+    outline: none;
+    border: 1px solid lightgrey;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 0 20px;
+    transition: all ease 200ms;
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+.imput-email span{
+    padding: 2px 10px;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    color: #737373;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: all ease 200ms;
+    color: white;
+    border-radius: 3px;
+}
+.imput-email input:focus, .imput-email input:valid {
+    border: 1px solid #e50914;
+}
+.imput-email input:focus ~ span, .imput-email input:valid ~ span {
+    background-color: #e50914;
+    color: white;
+    font-size: 10px;
+    top: 0px;
+    z-index: 1;
+}
+
+form button {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #e50914;
+    background-color: transparent;
+    color: #e50914;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 15px 20px #0e0e0e;
+    transition: all 0.3s ease 0s;
+    /* animation: tinDownOut; */
+    transition-duration: 0,5;
+}
+button:hover {
+    border-color: transparent;
+    background-color: #B1060F;
+    box-shadow: 0px 10px 30px #940109;
+    color: white;
+    transform: translateY(-7px);
+}
+form .abaixo-botao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+form .abaixo-botao input {
+    width: initial;
+    height: initial;
+    margin-right: 4px;
+}
+form .abaixo-botao span,
+form .abaixo-botao a {
+    font-size: 13px;
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+form p {
+    font-size: 16px;
+    color: #737373;
+    margin-bottom: 16px;
+}
+form p a {
+    color: white;
+}
+form p + p {
+    font-size: 13px;
+}
+form p + p a {
+    color: blue;
+}
+footer {
+    background-color: #000000bf;
+    margin-top: 100px;
+    padding: 30px 174px;
+    position: relative;
+    z-index: 1;
+}
+/* Toda a primeira linha do footer */
+footer p {
+    color: #737373;
+    margin-bottom: 30px;
+}
+footer p a {
+    color: #737373;
+    cursor: pointer;
+    position: relative;
+}
+
+footer p a:hover::after{
+    transition: 0.5s ease;
+    opacity: 1;
+    transform: translateY(10px);
+}
+footer p a::after {
+    content: "";
+    position: absolute;
+    background-color: #e50914;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+}
+footer ul {
+    display: flex;
+    margin-bottom: 20px;
+}
+footer ul li {
+    flex: 1;
+}
+footer ul li a {
+    font-size: 13px;
+    color: #737373;
+    margin-bottom: 16px;
+    display: block;
+}
+footer select {
+    background-color: #000000;
+    padding: 12px 26px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    color: #737373;
+}
